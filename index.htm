@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação de Horário de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="logo">
+        <h1>SUA LOGO</h1>
+    </div>
+    
+    <div class="container">
+        <div class="header">
+            <span>Cadastrar Clientes</span>
+            <button onclick="openModal()" id="new">Cadastrar</i></button>
+        </div>
+
+        <div class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Serviço</th>
+                        <th>Horario</th>
+                        <th>Preço</th>
+                        <th>Editar</th>
+                        <th>Excluir</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="n-nome">Nome</label>
+                    <input id="n-nome" type="text" required/>
+
+                    <label for="n-servico">Serviço</label>
+                    <input id="n-servico" type="text" required/>
+
+                    <label for="d-data">Data</label>
+                    <input id="d-data" type="text" required/>
+
+                    <label for="p-preco">Preço</label>
+                    <input id="p-preco" type="number" required/>
+
+                    <button id="btnSalvar">Salvar</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
